@@ -9,22 +9,26 @@
         <div class="col-md-12 mb-3">
           <label>Nome</label>
           <input type="text" id="nome" class="form-control" formControlName="nome" required/>
+          <!-- errors-->
           <p *ngIf="nome?.touched && nome?.invalid" class="error">
-            <sup>*</sup>Nome obrigatório</p>
+            <sup>*</sup>Nome obrigatório
+          </p>
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-12 mb-3">
           <label>Idade</label>
-          <input
-            type="number"
+          <input type="number"
             formControlName="idade"
             class="form-control"
             required
           />
+          <!-- errors-->
+
           <p *ngIf="idade?.touched && idade?.invalid" class="error">
-            <sup>*</sup>Informe a idade</p>
+            <sup>*</sup>Informe a idade
+          </p>
         </div>
       </div>
 
@@ -32,20 +36,25 @@
         <div class="col-md-12 mb-3">
           <label>Telefone:</label>
           <input
-            type="text"
-            formControlName="telefone"
+            type="text" formControlName="telefone"
             class="form-control"
             required
           />
+          <!-- errors-->
+
           <p *ngIf="telefone?.touched && telefone?.invalid" class="error">
-            <sup>*</sup>Informe telefone</p>
+            <sup>*</sup>Informe telefone
+          </p>
           <p *ngIf="telefone?.errors?.['pattern']" class="error">
-            <sup>*</sup>Use apenas números</p>
+            <sup>*</sup>Use apenas números
+          </p>
         </div>
       </div>
 
       <div class="form-group text-end">
-        <button type="submit" class="btn btn-info mx-2" [disabled]="!contatoForm.valid">Editar Contato</button>
+        <button type="submit" class="btn btn-info mx-2" [disabled]="!contatoForm.valid">
+          Editar Contato
+        </button>
       </div>
     </div>
   </div>

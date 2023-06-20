@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms'
@@ -23,6 +24,7 @@ export class AddContatoComponent implements OnInit{
   constructor(
     private contatoService: ContatoService,
     private fb: FormBuilder,
+    private router: Router,
     private toastr: ToastrService){
     this.contatoForm = this.createForm();
     }
@@ -45,6 +47,7 @@ export class AddContatoComponent implements OnInit{
       this.toastr.success(
       this.contatoForm.controls['nome'].value + " adicionado"
       );
+      this.router.navigate(['list-contato']);
     }
 
     get nome(){
