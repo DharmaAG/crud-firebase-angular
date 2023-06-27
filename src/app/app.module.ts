@@ -14,7 +14,7 @@ import { ListContatoComponent } from './contato/list-contato/list-contato.compon
 
 import { AddcomidaComponent } from './comida/add-comida/add-comida.component';
 import { ListcomidaComponent } from './comida/list-comida/list-comida.component';
-import { EditComidaComponent } from './comida/edit-comida/edit-comida.component';
+import { EditcomidaComponent } from './comida/edit-comida/edit-comida.component';
 
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
@@ -35,7 +35,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
     ListContatoComponent,
 
     AddcomidaComponent,
-    EditComidaComponent,
+    EditcomidaComponent,
     ListcomidaComponent
 
 

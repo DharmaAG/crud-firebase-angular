@@ -12,7 +12,7 @@ import { EditContatoComponent } from './contato/edit-contato/edit-contato.compon
 
 import { AddcomidaComponent } from './comida/add-comida/add-comida.component';
 import { ListcomidaComponent } from './comida/list-comida/list-comida.component';
-import { EditComidaComponent } from './comida/edit-comida/edit-comida.component';
+import { EditcomidaComponent } from './comida/edit-comida/edit-comida.component';
 
 
 
@@ -26,7 +26,7 @@ const routes: Routes = [
   { path: '', redirectTo: '/list-comida', pathMatch: 'full' },
   { path: 'add-comida', component: AddcomidaComponent },
   { path: 'list-comida', component: ListcomidaComponent },
-  { path: 'edit-comida/:id', component: EditComidaComponent }
+  { path: 'edit-comida/:id', component: EditcomidaComponent }
 
 ];
 

@@ -90,7 +90,7 @@ export class comidaService {
 
   deleteComida(id: String) {
 
-    this.comidaRef = this.db.object('list-comida/' + id);
+    this.comidaRef = this.db.object('list-comidas/' + id);
 
     this.comidaRef.remove();
 

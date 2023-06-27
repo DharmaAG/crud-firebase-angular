@@ -31,15 +31,14 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-md-12 mb-3">
-          <label [ngClass]="{'text-danger': tipo?.touched && tipo?.invalid}" for="tipo" class="form-label">Tipo</label>
+      <label [ngClass]="{'text-danger': tipo?.touched && tipo?.invalid}" for="tipo" class="form-label">Tipo</label>
+      <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" formControlName="tipo">
 
-          <input [ngClass]="{'is-invalid': tipo?.touched && tipo?.invalid, 'is-valid': tipo?.touched && tipo?.valid}" type="text" formControlName="tipo" class="form-control" required
+        <option value="Salgada">Salgada</option>
 
-          />
-        </div>
-      </div>
+        <option value="Doce">Doce</option>
+      </select>
+      <br>
 
       <!-- LINHA 3 - CAMPO tipo -->
 

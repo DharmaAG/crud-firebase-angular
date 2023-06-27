@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EditComidaComponent } from './edit-comida.component';
+import { EditcomidaComponent } from './edit-comida.component';
 
-describe('EditComidaComponent', () => {
-  let component: EditComidaComponent;
-  let fixture: ComponentFixture<EditComidaComponent>;
+describe('EditcomidaComponent', () => {
+  let component: EditcomidaComponent;
+  let fixture: ComponentFixture<EditcomidaComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ EditComidaComponent ]
+      declarations: [ EditcomidaComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(EditComidaComponent);
+    fixture = TestBed.createComponent(EditcomidaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
